@@ -1,0 +1,38 @@
+.wishlist-notification-layer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.wishlist-notification-layer.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.wishlist-notification {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.is-visible .wishlist-notification {
+    transform: translate(-50%, 0);
+}
+
+.wishlist-notification-content {
+    padding: 0;
+    margin: 30px 50px;
+}
